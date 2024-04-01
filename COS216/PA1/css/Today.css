@@ -1,0 +1,187 @@
+/* Paul Nhlapo u18108378 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open+Sans'+bold;
+    color:black;
+    line-height: 1.8;
+    margin: 0px;
+    padding: 0px
+}
+
+.background {
+  background-color: white;
+  
+  }
+  
+ul{
+    list-style-type: none;
+}
+
+a{
+    /* So that the nav bar doesn't have a line uunderneath the different tabs */
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    background-color: black;
+    color:white ;
+}
+.nav ul{
+    display: flex;
+}
+
+.nav a{
+    color: silver;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.nav img{
+    width: 100%;
+    height: 70px;
+    width: auto;
+}
+
+.nav a:hover{
+
+    background-color: lightgreen;
+    color: black;
+}
+
+.nav .flex{
+    display: flex;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+ 
+.flex{
+    display: flex;
+    justify-content: left;
+    height: 100%;
+}
+/* Now the nav search button */
+.items{
+    color:silver;
+    float: right;
+    font-family:'Open+Sans';
+    font-size: large;
+    text-align: right;
+}
+.SearchLabel{
+    background-color: none;
+    color:silver;
+    font-size: large;
+}
+
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid grey;
+    box-shadow: 10px 10px lightblue;
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 100vh;
+    background-color: white;
+    border: 1px solid silver;
+    margin: 20px;
+    border-bottom-color: black;
+    box-shadow: inset;
+}
+/* The name of the Author */
+li{
+    list-style-type: none;
+}
+li:hover{
+color: rgb(84, 16, 16);
+}
+
+.blog-img{
+    width: 100%
+    /* height:auto; */
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%
+    /* object-position:center;
+    object-fit:cover; */
+}
+.blog-img::before,
+.blog-img::after{
+position: absolute;
+content: "";
+}
+
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span{
+    color: blue;
+    font-size: 1rem;
+}
+
+.blog-text .blog-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.blog-text .blog-title:hover{
+    color:blue;
+    transition: all ease;
+}
+.blog-text p{
+    color: rgb(38, 38, 56);
+    font-size: 3;
+    text-overflow: ellipsis;
+    margin: 7px;
+    overflow: hidden;
+}
+
+.blog-text .Read-more:hover{
+ color: red;
+}
+
+@media(max-width:1250px){
+    .blog-box{
+        width: 300px;
+    }
+}
+@media(max-width:1100px){
+    .blog-box{
+        width: 70%;
+    }
+}
